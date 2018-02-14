@@ -1,0 +1,27 @@
+cd /Users/akram_ashraf/Desktop/Sprint0
+git init
+git add FirstFile.txt
+git status
+git commit -m "First File"
+git add SecondFile.txt
+git status
+git commit -m “Second File"
+git add ThirdFile.txt
+git status
+git commit -m “Third File"
+rm SecondFile.txt
+git checkout SecondFile.txt
+git commit -m "3 files again"
+git remote add origin https://github.com/AkramAshrafRamses/Sprint0.git
+git remote -v
+git push -u origin master
+git checkout -b ReadMe
+git branch
+git add README.md
+git status
+git commit -m "new file"
+git push --set-upstream origin ReadMe
+git checkout master
+git merge ReadMe
+
+
